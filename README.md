@@ -2,7 +2,7 @@
 
 # [NyumatFlix](https://nyumatflix.com)
 
-NyumatFlix is a platform for streaming movies and TV shows. It is a open-source, no-cost, and ad-free movie and tv show stream aggregator. Streams are curated from some of the most popular API providers.
+NyumatFlix is a platform for killing streaming movies and TV shows. It is a open-source, no-cost, and ad-free movie and tv show stream aggregator. Streams are curated from some of the most popular API providers.
 
 ## ⚡️ Tech Stack
 
