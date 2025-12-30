@@ -12,6 +12,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 if (process.env.NODE_ENV !== "production") {
@@ -19,33 +20,33 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nyumatflix.com/"),
-  title: "NyumatFlix | Watch Movies and TV Shows",
+  metadataBase: new URL("https://kirus-movies.vercel.app/"),
+  title: "Kirus Movies | Watch Movies and TV Shows",
   icons: {
     icon: "/favicon.ico",
   },
   description:
-    "Nyumatflix is an open-source, no-cost, and ad-free movie and tv show stream aggregator.",
+    "Kirus Movies is a private, ad-free movie and tv show stream aggregator.",
   openGraph: {
     type: "website",
-    url: "https://nyumatflix.com",
-    title: "NyumatFlix | Watch Movies and TV Shows",
+    url: "https://kirus-movies.vercel.app",
+    title: "Kirus Movies | Watch Movies and TV Shows",
     description:
-      "Nyumatflix is an open-source, no-cost, and ad-free movie and tv show stream aggregator.",
+      "Kirus Movies is a private, ad-free movie and tv show stream aggregator.",
     images: [
       {
-        url: "https://nyumatflix.com/og.webp",
-        alt: "NyumatFlix | Watch Movies and TV Shows",
+        url: "https://kirus-movies.vercel.app/og.webp",
+        alt: "Kirus Movies | Watch Movies and TV Shows",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://nyumatflix.com",
-    title: "NyumatFlix | Watch Movies and TV Shows",
+    site: "https://kirus-movies.vercel.app",
+    title: "Kirus Movies | Watch Movies and TV Shows",
     description:
-      "Nyumatflix is an open-source, no-cost, and ad-free movie and tv show stream aggregator.",
-    images: ["https://nyumatflix.com/og.webp"],
+      "Kirus Movies is a private, ad-free movie and tv show stream aggregator.",
+    images: ["https://kirus-movies.vercel.app/og.webp"],
   },
 };
 
@@ -56,16 +57,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
-      <head>
-        {process.env.NODE_ENV === "production" && (
-          <Script
-            defer
-            src="https://cloud.umami.is/script.js"
-            data-website-id="679411bf-5cd3-4f57-983d-956d67f033cc"
-            strategy="afterInteractive"
-          />
-        )}
-      </head>
       <body className={cn("min-h-screen bg-background", inter.className)}>
         <QueryProvider>
           <AuthSessionProvider>
